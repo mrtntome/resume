@@ -1,0 +1,93 @@
+#  -*- find-file-hook: org-babel-execute-buffer -*-
+#+BEGIN_SRC emacs-lisp :exports none
+(use-package ox-moderncv
+    :load-path "/home/martin/Documents/cv/lib"
+    :init (require 'ox-moderncv))
+#+END_SRC
+
+#+RESULTS:
+
+# CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+#+CVSTYLE: banking
+# CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+#+CVCOLOR: blue
+#+SCALE: 0.78
+
+#+AUTHOR: Martín Tomé
+#+TITLE: Resume
+#+EMAIL: mrtn.tome@gmail.com
+#+ADDRESS: La Plata
+#+ADDRESS: Buenos Aires
+#+ADDRESS: Argentina
+#+MOBILE: +54 221 364 6775
+#+HOMEPAGE: mtome.xyz
+#+GITHUB: mrtntome
+#+LINKEDIN: mrtntome
+#+PHOTO: smile.jpg
+
+* Formal Education
+** Degree in Physics
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2012-03-01>
+:TO:     <2019-03-28>
+:LOCATION: La Plata, Argentina
+:EMPLOYER: National University of La Plata
+:END:
+
+[[https://drive.google.com/file/d/1ESRvrin_DCsRD_J4wPmIz8jz4D21_RZL/view?usp=sharing][5 years Bachelor of Science degree.]]
+
+** PhD in Physics
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2019-04-01>
+:TO:     Present
+:LOCATION: La Plata, Argentina
+:EMPLOYER: National University of La Plata
+:END:
+
+ [[https://drive.google.com/file/d/103OhbwsuIro58B3pOO2b5nqYIUPRANM-/view][Funding coming from a CONICET Fellowship.]]
+
+* Work Experience
+** Teaching Assistant
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2018-11-01>
+:TO:     Present
+:LOCATION: La Plata, Argentina
+:EMPLOYER: Faculty of Exact Sciences (UNLP)
+:END:
+
+TA on introductory and advanced physics subjects.
+
+* Programming
+- Python (Machine Learning and Scientific Stack)
+- Julia (High-Performance Computing)
+- Bash (POSIX Shell)
+
+* Main Technical Skills
+- GNU/Linux (10+ years of experience, including CentOS/RHEL)
+- Git (Experience with Github, Gitlab and self-hosted repos)
+- Docker (Dockerfiles and Docker Compose)
+- CI/CD Workflows (Experience with Travis CI)
+- SQL Databases (MySQL/MariaDB)
+- AWS/GCP (Experience with EC2/CE and S3/CS)
+
+* Languages
+- Spanish (native)
+- [[https://drive.google.com/file/d/1pHf0qGQ641xjAk7-Al3VYue8Zdw9t_QZ/view?usp=sharing][English (fluent)]]
+
+* Defining Personal Qualities
+- Critical thinker 
+- Problem Solver 
+- Always willing to learn 
+
+
+#+BEGIN_SRC emacs-lisp :exports none
+(org-export-to-file 'moderncv "resume.tex")
+(org-latex-compile "resume.tex")
+#+END_SRC
+
+#+RESULTS:
+: /home/martin/Documents/cv/resume.pdf
+
