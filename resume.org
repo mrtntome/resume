@@ -1,7 +1,7 @@
 #  -*- find-file-hook: org-babel-execute-buffer -*-
 #+BEGIN_SRC emacs-lisp :exports none
 (use-package ox-moderncv
-    :load-path "/home/martin/Documents/cv/lib"
+    :load-path "/home/martin/Documents/resume/lib"
     :init (require 'ox-moderncv))
 #+END_SRC
 
@@ -69,7 +69,7 @@ TA on introductory and advanced physics subjects.
 - GNU/Linux (10+ years of experience, including CentOS/RHEL)
 - Git (Experience with Github, Gitlab and self-hosted repos)
 - Docker (Dockerfiles and Docker Compose)
-- CI/CD Workflows (Experience with Travis CI)
+- CI/CD Workflows (Experience with Jenkins and Travis CI)
 - SQL Databases (MySQL/MariaDB)
 - AWS/GCP (Experience with EC2/CE and S3/CS)
 
