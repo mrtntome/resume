@@ -61,17 +61,15 @@
 TA on introductory and advanced physics subjects.
 
 * Programming
-- Python (Machine Learning and Scientific Stack)
+- Python (Scientific Stack)
 - Julia (High-Performance Computing)
-- Bash (POSIX Shell)
 
 * Main Technical Skills
-- GNU/Linux (10+ years of experience, including CentOS/RHEL)
-- Git (Experience with Github, Gitlab and self-hosted repos)
-- Docker (Dockerfiles and Docker Compose)
-- CI/CD Workflows (Experience with Jenkins and Travis CI)
-- SQL Databases (MySQL/MariaDB)
-- AWS/GCP (Experience with EC2/CE and S3/CS)
+- GNU/Linux (CentOS/RHEL)
+- Shell Scripting (POSIX Shell, Bash)
+- Git (GitHub, GitLab)
+- Docker (Dockerfiles, Docker Compose)
+- AWS/GCP (EC2/CE, S3/CS)
 
 * Languages
 - Spanish (native)
@@ -89,5 +87,5 @@ TA on introductory and advanced physics subjects.
 #+END_SRC
 
 #+RESULTS:
-: /home/martin/Documents/cv/resume.pdf
+: /home/martin/Documents/resume/resume.pdf
 
