@@ -1,0 +1,44 @@
+\documentclass[11pt, a4paper]{moderncv}
+\usepackage[scale=$scale$]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\def\tightlist{}
+$if(cvstyle)$
+\moderncvstyle{$cvstyle$}
+$else$
+\moderncvstyle{banking}
+$endif$
+$if(cvcolor)$
+\moderncvcolor{$cvcolor$}
+$else$
+\moderncvcolor{blue}
+$endif$
+\title{$title$}
+\name{$author$}{}
+\address{$city$}{$province$}{$country$}
+\photo{$photo$}
+\email{$email$}
+\phone[mobile]{$phone$}
+$if(website)$
+\homepage{$website$}
+$endif$
+$if(github)$
+\social[github]{$github$}
+$endif$
+$if(linkedin)$
+\social[linkedin]{$linkedin$}
+$endif$
+\AtBeginDocument{\recomputelengths}
+\AfterPreamble{\hypersetup{
+ pdftitle={$title$},
+ pdfauthor={$author$},
+ pdfcreator={$author$}, 
+ pdfkeywords={},
+ pdfsubject={},
+ pdflang={English}}}
+\begin{document}
+\makecvtitle
+
+$body$
+
+\end{document}
